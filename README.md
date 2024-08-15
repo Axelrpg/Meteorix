@@ -1,79 +1,69 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Meteorix
 
-# Getting Started
+Meteorix es una aplicación móvil desarrollada en React Native con TypeScript que te permite conocer el clima en diferentes zonas del mundo. Con Meteorix, podrás ver la temperatura actual, las mínimas y máximas del día, y obtener información sobre la calidad del aire durante los próximos 10 días.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Características
+- **Temperatura Actual:** Consulta la temperatura en tiempo real de cualquier ubicación.
+- **Pronóstico del Día:** Ve las temperaturas mínima y máxima del día.
+- **Calidad del Aire:** Obtén un pronóstico de la calidad del aire para los próximos 10 días.
+- **Interfaz Moderna:** La aplicación utiliza componentes de React Native Paper para una experiencia de usuario fluida y atractiva.
+- **Reproducción de Video:** Incluye videos relacionados con el clima usando React Native Video.
 
-## Step 1: Start the Metro Server
+## Requisitos
+- Node.js (versión 14 o superior)
+- npm o yarn
+- Clave API de WeatherAPI
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Instalación
+1. **Clona este repositorio en tu máquina local:**
 
-To start Metro, run the following command from the _root_ of your React Native project:
+   ```bash
+   git clone https://github.com/tu-usuario/meteorix.git
+   cd meteorix
 
-```bash
-# using npm
-npm start
+2. **Instala las dependencias necesarias:**
 
-# OR using Yarn
-yarn start
-```
+   ```bash   
+   npm install
+   # o
+   yarn install
 
-## Step 2: Start your Application
+3. **Crea un archivo config.ts en la raíz del proyecto con el siguiente contenido:**
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+   ```bash  
+   export const API_KEY = 'TU_CLAVE_API_DE_WEATHERAPI';
+   Reemplaza 'TU_CLAVE_API_DE_WEATHERAPI' con la clave API que obtuviste de WeatherAPI.
 
-### For Android
+4. **Ejecuta la aplicación:**
 
-```bash
-# using npm
-npm run android
+   ```bash  
+   npm run start
+   # o
+   yarn start
 
-# OR using Yarn
-yarn android
-```
+## Tecnologías Utilizadas
+- **React Native:** Framework principal para el desarrollo móvil.
+- **TypeScript:** Lenguaje utilizado para un desarrollo más seguro y mantenible.
+- **React Native Paper:** Biblioteca de componentes para la interfaz de usuario.
+- **Axios:** Cliente HTTP utilizado para hacer las solicitudes a la API.
+- **Async Storage:** Para el almacenamiento local de datos.
+- **React Navigation (Native Stack):** Para la navegación entre pantallas.
+- **React Native Video:** Para la reproducción de videos.
 
-### For iOS
+## Contribuciones
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor, sigue estos pasos:
 
-```bash
-# using npm
-npm run ios
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (**git checkout -b feature/nueva-caracteristica**).
+3. Realiza los cambios necesarios y haz un commit (**git commit -m 'Añadir nueva característica'**).
+4. Envía tus cambios (**git push origin feature/nueva-caracteristica**).
+5. Crea un Pull Request.
 
-# OR using Yarn
-yarn ios
-```
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](https://github.com/Axelrpg/Meteorix/blob/main/LICENSE) para más detalles.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Autor
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Desarrollado por [Axelrpg](https://github.com/Axelrpg).
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+¡Gracias por usar Meteorix! Si tienes alguna pregunta o problema, no dudes en abrir un issue en el repositorio.
